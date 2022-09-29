@@ -1,28 +1,31 @@
-
 Link para download do git: https://git-scm.com/download/
 
 Gitbash - Terminal extendido para otimizar o uso do Git;
 
-## Comandos Windows:
+### Comandos Windows:
+
 dir - listar os repositórios
 cd - mudar de diretório
 mkdir - criar diretório
 del - deletar arquivo dentro do diretório
 rmdir - deletar o diretório
 
-## Objetos fundamentais internos do Git:
+### Objetos fundamentais internos do Git:
 
-### Blobs
+#### Blobs
+
 Onde os arquivos são guardados; Objeto que contém metadados;
 Estrutura básica contém o tipo, o tamanho do arquivo, /0 e o SHA1 do arquivo;
 
-### Trees
+#### Trees
+
 Armazenam um ou mais Blobs diferentes;
 Apontam para blobs ou outras árvores;
 Também é um objeto que contém metadados;
 Estrutura básica contém o tipo, o tamanho do , /0, o blob, o SHA1 dela e o nome do arquivo
 
-### Commits
+#### Commits
+
 Objeto mais importante de todos porque junta os outros;
 Apontam para trees, para parentes (último commit feito), autor, e para a mensagem;
 Também tem um timestamp (informa data, hora de quando foi criado);
@@ -32,14 +35,21 @@ Se alterar algo de um blob, altera o SHA1 dele, que altera o SHA1 da árvore, qu
 
 Por causa dessa estrutura o Git é um sistema distribuído e seguro.
 
-### Chave SSH
+#### Chave SSH
+
 Usada para estabelecer uma conexâo segura e encryptada entre duas máquinas;
 Sempre terá uma chave pública (fica no Github para nosso caso) e uma chave privada que é a da minha máquina;
 
-## Comandos básicos git
+#### Comandos básicos git
+
 git init
 git add
 git commit
 git clone
 git push
+
+git status
+
+
+
 
