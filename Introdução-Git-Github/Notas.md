@@ -1,4 +1,4 @@
-Link para download do git: https://git-scm.com/download/
+
 
 Gitbash - Terminal extendido para otimizar o uso do Git;
 
@@ -42,14 +42,16 @@ Sempre terá uma chave pública (fica no Github para nosso caso) e uma chave pri
 
 #### Comandos básicos git
 
-git init
-git add
-git commit
-git clone
-git push
+git status - saber qual o estado atual e o que precisa ser feito
 
-git status
+git init - iniciar o sistema de controle de versão
 
+git add - mover para o stage
 
+git commit - mover para o repositório local
 
+git clone - clonar um repositório vindo do servidor (github ou outro)
 
+git push - empurrar o repositório local para o servidor (github)
+
+git pull - puxar um repositório do servidor para a máquina
